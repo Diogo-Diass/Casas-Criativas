@@ -32,6 +32,11 @@
 }
 @media screen and (min-width: 310px) and (max-width: 699px) {
 
+header{
+
+    height: 118px;
+}
+
 .imgLogoMobile{
     max-width: 100%;
     float: left;
@@ -41,19 +46,91 @@
     display: none;
 }
 
-
-.h1HeaderDesktop{
-    display: none;
-
-}
 .h1Header{
     color: #D4A311;
     font-family: 'Metal', cursive;
 }
 
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .imgIntro{
   width: 100%;
   margin-top: 1em;
+}
+
+
+
+.conteudo{
+    margin-top: 2em;
+    text-align: center;
+    
+}
+
+.cortinas{
+    width: 75%;
+    display: block;
+    margin: auto;
+
+}
+
+.cortinas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+
+
+}
+
+.papelParede{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.papelParede img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+    height: 100% ;
+}
+
+.persianas{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.persianas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+}
+
+
+}
+
+@media screen and (min-width: 700px)  {
+
+body{
+    margin:0em 50vh;
+};
+
+.divHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgLogoMobile{
+    float: left;
+}
+
+.h1Header{
+    color: #D4A311;
+    font-family: 'Metal', cursive;
 }
 
 .titulo{
@@ -63,4 +140,3 @@
 }
 
 }
-
