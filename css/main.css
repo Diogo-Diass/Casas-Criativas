@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
+body{
+    scroll-behavior: smooth;
+}
+
+
 @media screen and (min-width: 0px) and (max-width: 309px) {
 
 .imgLogoMobile{
@@ -31,6 +37,7 @@
     
 }
 @media screen and (min-width: 310px) and (max-width: 699px) {
+
 
 header{
 
@@ -126,10 +133,37 @@ footer{
    margin-top: 1em;
    background-color: black;
 }
+
+#topo{
+    position: fixed;
+    background-color: black;
+    bottom: 3.5em;
+    right: 0em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
 }
 
-
+.arrow{
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
 }
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+} 
 
 @media screen and (min-width: 700px)  {
 
@@ -155,6 +189,35 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#topo{
+    position: fixed;
+    background-color: black;
+    bottom: 3.5em;
+    right: 0em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
 
 }
