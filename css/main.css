@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 
-body{
+html,body{
     scroll-behavior: smooth;
 }
 
@@ -30,14 +30,122 @@ body{
     font-family: 'Metal', cursive;
 }
 
+.imgLogo{
+    display: none;
+
+}
+
+.imgIntroDesk{
+    display: none;
+}
+
 .imgIntro{
     width: 100%;
     margin-top: 1em;
   }
+
+  
+.conteudo{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.cortinas{
+    width: 75%;
+    display: block;
+    margin: auto;
+
+}
+
+.conteudo p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Oswald', sans-serif;
+}
+
+.conteudo h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+.cortinas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+
+
+}
+
+.papelParede{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.papelParede img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+    height: 100% ;
+}
+
+.persianas{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.persianas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+}
+
+footer{
+   position: absolute;
+   width: 100%;
+   left: 0em;
+   margin-top: 1em;
+   background-color: black;
+}
+
+#topo{
+    position: fixed;
+    background-color: black;
+    bottom: 3.5em;
+    right: 0em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#topo:hover{
+    background-color: gray;
+    color: black;
+    border: 0.1em solid black;
+ }
+ 
     
 }
 @media screen and (min-width: 310px) and (max-width: 699px) {
-
 
 header{
 
@@ -50,6 +158,11 @@ header{
 }
 
 .imgLogo{
+    display: none;
+
+}
+
+.imgIntroDesk{
     display: none;
 }
 
@@ -163,21 +276,29 @@ footer{
     -webkit-transform: rotate(-135deg);
 }
 
+#topo:hover{
+    background-color: gray;
+    color: black;
+    border: 0.1em solid black;
+ }
+ 
+
 } 
 
-@media screen and (min-width: 700px)  {
-
-body{
-    margin:0em 50vh;
-};
-
-.divHeader{
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 700px) and (max-width: 1041px)  {
+       
+.imgLogoMobile{
+    display: none;
 }
 
-.imgLogoMobile{
+.imgIntro{
+    display: none;
+}
+
+.imgLogo{
+    display: block;
     float: left;
+    height: 30vh;
 }
 
 .h1Header{
@@ -185,10 +306,81 @@ body{
     font-family: 'Metal', cursive;
 }
 
+
 .titulo{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 5em;
+    
+}
+
+.imgIntroDesk{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.conteudo{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.cortinas{
+    width: 75%;
+    display: block;
+    margin: auto;
+
+}
+
+.conteudo p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Oswald', sans-serif;
+}
+
+.conteudo h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+.cortinas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+
+
+}
+
+.papelParede{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.papelParede img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+    height: 100% ;
+}
+
+.persianas{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.persianas img{
+    max-width: 100%;
+    margin-top: 1em;
+    border: 0.5em groove black;
+}
+
+footer{
+   position: absolute;
+   width: 100%;
+   left: 0em;
+   margin-top: 1em;
+   background-color: black;
 }
 
 #topo{
@@ -220,4 +412,159 @@ body{
     -webkit-transform: rotate(-135deg);
 }
 
+#topo:hover{
+    background-color: gray;
+    color: black;
+    border: 0.1em solid black;
+ }
+ 
+
 }
+
+@media screen and (min-width: 1042px)  {
+
+.imgLogoMobile{
+    display: none;
+}
+
+.imgLogo{
+    display: block;
+    float: left;
+    height: 30vh;
+}
+
+
+.h1Header{
+    color: #D4A311;
+    font-family: 'Metal', cursive;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3em;
+
+}
+
+.imgIntroDesk{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.imgIntro{
+    display: none;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+.conteudo p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Oswald', sans-serif;
+}
+
+.conteudo h1{
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+.cortinas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cortinas img {
+    width: 40%;
+    margin-top: 1em;
+    margin-left: 1em;
+    border: 0.5em groove black;
+
+
+}
+
+.papelParede{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.papelParede img {
+    width: 40%;
+    margin-top: 1em;
+    margin-left: 1em;
+    border: 0.5em groove black;
+
+
+}
+
+
+.persianas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.persianas img {
+    width: 40%;
+    margin-top: 1em;
+    margin-left: 1em;
+    border: 0.5em groove black;
+
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0em;
+    margin-top: 1em;
+    background-color: black;
+ }
+ 
+ #topo{
+     position: fixed;
+     background-color: black;
+     bottom: 3.5em;
+     right: 0em;
+     border-radius: 50%;
+     width: 3em;
+     height: 3em;
+     color: white;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+ 
+ }
+ 
+ .arrow{
+     border: solid white;
+     border-width: 0 7px 7px 0;
+     padding: 5px;
+     display: inline-block;
+ }
+ 
+ .up{
+     transform: rotate(-135deg);
+     -webkit-transform: rotate(-135deg);
+ }
+
+ #topo:hover{
+    background-color: gray;
+    color: black;
+    border: 0.1em solid black;
+ }
+ 
+}
+
+
