@@ -124,7 +124,7 @@ footer{
     position: fixed;
     background-color: black;
     bottom: 3.5em;
-    right: 0em;
+    right: 3em;
     border-radius: 50%;
     width: 3em;
     height: 3em;
@@ -134,7 +134,7 @@ footer{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    z-index: 1;
 }
 
 .arrow{
@@ -160,27 +160,27 @@ footer{
  .endereco{
     margin: auto;
     display: block;
-    width: 50%;
+   text-align: center;
  }
 
  .contato{
     margin: auto;
     display: block;
-    width: 50%;
+   text-align: center;
  }
 
  footer a{
     text-decoration: none;
-    color:white ;
+    color:rgb(156, 156, 156) ;
  }
 
  .cep{
-    color:white;
+    color:rgb(156, 156, 156);
  }
 
  footer a:hover{
     text-decoration: none;
-    color:white ;
+    color:rgb(156, 156, 156) ;
  }
  
  .bi-whatsapp{
@@ -319,7 +319,7 @@ footer{
 
 #topo{
     position: fixed;
-    background-color: black;
+    background-color: rgb(151, 151, 151);
     bottom: 3.5em;
     right: 0em;
     border-radius: 50%;
@@ -331,7 +331,7 @@ footer{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    z-index: 1;
 }
 
 .arrow{
@@ -357,27 +357,29 @@ footer{
  .endereco{
     margin: auto;
     display: block;
-    width: 50%;
+    text-align: center;
  }
 
  .contato{
     margin: auto;
     display: block;
-    width: 50%;
+    text-align: center;
  }
+
 
  footer a{
     text-decoration: none;
-    color:white ;
+    color:rgb(156, 156, 156);
  }
+ 
 
  .cep{
-    color:white;
+    color:rgb(180, 178, 178);
  }
 
  footer a:hover{
     text-decoration: none;
-    color:white ;
+    color:rgb(180, 178, 178);
  }
  
  .bi-whatsapp{
@@ -524,7 +526,7 @@ footer{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    z-index: 1;
 }
 
 .arrow{
@@ -718,6 +720,7 @@ footer{
      align-items: center;
      justify-content: center;
      cursor: pointer;
+     z-index: 1;
  
  }
  
