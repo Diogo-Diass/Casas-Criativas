@@ -8,11 +8,13 @@ document.addEventListener("scroll", ocultar)
 
 function ocultar(){
 
-    if(window.scrollY > 10){
+    console.log(screen)
+
+    if(window.scrollY > 10 && screen.width > 310){
 
         botaoTopo.style.display = "flex"
     
-    }else{
+    }else if(screen.width > 0 || screen.width < 309){
 
         botaoTopo.style.display = "none"
 
